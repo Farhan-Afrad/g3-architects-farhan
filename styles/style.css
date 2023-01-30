@@ -276,7 +276,7 @@ sponsors styles---------
     justify-content: space-between;
     column-gap: 35px;
 }
-img:nth-child(even){
+.gallery img:nth-child(even){
     margin-top: 35px;
 }
 
