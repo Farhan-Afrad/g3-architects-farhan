@@ -283,6 +283,7 @@ sponsors styles---------
 /* footer styles */
 footer{
     margin-top: 130px;
+    margin-bottom: 130px;
 }
 .footer{
     border-radius: 8px;
