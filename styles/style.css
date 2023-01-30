@@ -8,7 +8,7 @@ body{
     margin: 0;
 }
 .header-container,.features-container,.features-extened,
-.some-facts-container,.facts-container{
+.some-facts-container,.facts-container,.sponsors,.footer{
     width: 1240px;
 }
 .primary-btn{
@@ -19,7 +19,7 @@ body{
     border: 0;
     padding: 20px 25px;
 }
-main{
+main,footer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -233,6 +233,46 @@ facts container
     text-shadow: 0 0 30px #ffee10;
     transition: text-shadow 0.5s ease-out 0s;
 }
+/* ---------------------
+sponsors styles---------
+---------------------- */
+.sponsors{
+    margin-top: 180px;
+}
+.sponsors-description{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sponsors-title{
+    margin: 0 0 24px 0;
+    font-size: 45px;
+    color: #131313;
+}
+.sponsors-description p{
+    color: #727272;
+}
+.sponsors-partner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.sponsors-partner p img{
+    filter: grayscale(100%);
+}
+/* footer styles */
+footer{
+    margin-top: 130px;
+}
+.footer{
+    border-radius: 8px;
+    background-color: #FFF4E7;
+    text-align: center;
+    padding: 22px 0;
+    font-size: 24px;
+    color: #424242;
+}
+
 
 
 
@@ -264,7 +304,7 @@ facts container
 @media only screen and (max-width:576px) {
     /* common utilities */
     .header-container,.features-container,.features-extened,
-    .facts-container{
+    .facts-container,.sponsors,.sponsors-partner{
         flex-direction: column;
         width: 100%;
     }
@@ -296,7 +336,7 @@ facts container
     }
     /* extended features */
     .extended-description,.features-banner,
-    .some-facts-container,.some-facts{
+    .some-facts-container,.some-facts,footer,.footer{
         width: 100%;
     }
     .features-banner,.banner-2nd .primary-btn{
@@ -314,6 +354,14 @@ facts container
         row-gap: 50px;
         margin-right: 30px;
         margin-left: 30px;
+    }
+    /* sponsors */
+    .sponsors-partner{
+        row-gap: 30px;
+    }
+    /* footer */
+    .footer{
+        width: 100%;
     }
     
 }
